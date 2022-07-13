@@ -1,6 +1,14 @@
 function add_loss = epstein_peterson(rng_km,z,frequencia);
 
-%Epstein-Peterson
+%Epstein-Peterson Model
+
+% Author: Jonas Nunes 
+% Universidade do Estado do Rio de Janeiro
+% 2017
+% www.joneco.com.br
+
+%This function script calculate the diffraction loss based in the Epstein-Peterson method.
+
 distance = rng_km(end)*1000;
 size = length(rng_km);
 tops_position = rng_km(1); % vector that store the position of the tops (biggest height points), it initialize with the transmitter position
