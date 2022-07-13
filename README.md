@@ -1,5 +1,8 @@
 # celular_coverage_prediction
 I've done this for study purpose at the end of my engineering undergraduation in 2017. This code is free for any use.
+I'VE TESTED IN MATLAB 2018a and 2016a versions.
+I provided a dted file as example, if you use yours, remember to look at the scripts to change latlong links infos and the latlong boundaries/limits.
+The ellapsed time is based in a 4th generation Intel I7 notebook. The scripts takes a bit time to run because all of the calculus are done with matrices.
 
 ## Description
 
@@ -53,3 +56,91 @@ This function script fuse two images and it allows to set alpha channel, i used 
 This script was made by Athi Narayanan S, but i've simplified it a lot to use in this project
 ```
 
+<img src="images/3d_map.png" width="800" height="600" title="3D Elevation Map">
+
+```
+This image shows a 3d View of the sunrounding area of the links.
+```
+
+## Outputs and Results
+
+ - [`Link Calculation Script`](#link_calculation) - estimate elapsed time +- 3minutes
+
+
+<img src="images/3d_terrain_map.png" width="800" height="600" title="3D Terrain Map">
+
+```
+This image show the terrain with altitude/elevation used as example.
+```
+
+ 
+ <img src="images/relevo_rxtx.png" width="800" height="600" title="2D elevation Terrain Map">
+
+```
+This image shows a 3d View of the sunrounding area of the links.
+```
+
+<img src="images/distance_power_curve.png" width="800" height="600" title="Distance x Received Power Curve">
+
+```
+This image shows the received power acording to the distance between the links.
+```
+
+<img src="images/distance_total_loss_curve.png" width="800" height="600" title="Distance x Total Loss Curve">
+
+```
+This image shows the received total loss acording to the distance between the links.
+```
+
+<img src="images/elevation_profile.png" width="800" height="600" title="Elevation Profile">
+
+```
+This image shows the elevation profile between the two links including the fresnel ellipsoid.
+```
+
+<img src="images/link_path_map.png" width="800" height="600" title="Link Path Map">
+
+```
+This image shows the link path of between the two path plotted in a map.
+```
+
+ - [`Celular Prediction Script`](#celular_prediction)  +- 12minutes
+
+
+<img src="images/relevo_iso.png" width="800" height="600" title="2d Elevation Map Boundaries">
+
+```
+This image shows a 2d Elevation map with the received power bounderies considering only free space loss
+```
+
+<img src="images/relevo_peterson.png" width="800" height="600" title="3D Elevation Map">
+
+```
+This image shows a 2d Elevation map with the received power bounderies considering diffraction calculated using the Epstein-Peterson method
+```
+
+<img src="images/iso_map.png" width="800" height="600" title="Map Boundaries">
+
+```
+This image shows a google maps with the received power bounderies considering only free space loss
+```
+
+<img src="images/diffraction_map.png" width="800" height="600" title="3D Elevation Map">
+
+```
+This image shows a google maps with the received power considering diffraction calculated using the Epstein-Peterson method
+```
+
+<img src="images/junto_iso.png" width="800" height="600" title="3D Elevation Map">
+
+```
+This image shows a google maps with the received power colormap considering only free space loss
+```
+
+<img src="images/junto_peterson.png" width="800" height="600" title="3D Elevation Map">
+
+```
+this image shows a google maps with the received power colormap considering diffraction calculated using the Epstein-Peterson method
+```
+ 
+ 
