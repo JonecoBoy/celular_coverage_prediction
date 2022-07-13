@@ -41,10 +41,10 @@ fresnelCS.m
 This function script calculate the fresnel cosine and sine integrals. This script was made by Venkata Sivakanth Telasula. 
 
 This script is optinal, it can be used in the link_calculation.m. I didn't not used it in my final code, i've used an aproximation method.
-But if you wish to use it, just go to the link_calculation.m, remove/comment line #61 (add_loss=), and place this:
+But if you wish to use it, just go to the link_calculation.m, remove/comment line #61 (diffraction_loss=...), and place this:
 
 [FresnelC, FresnelS] = fresnelCS(Vo)
- add_loss = add_loss + -20*log10((1/sqrt(2))*sqrt((0.5 - FresnelC)^2 + (0.5 - FresnelS)^2));
+ diffraction_loss = diffraction_loss + -20*log10((1/sqrt(2))*sqrt((0.5 - FresnelC)^2 + (0.5 - FresnelS)^2));
 ```
 
 fuse_2images.m
