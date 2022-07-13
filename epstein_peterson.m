@@ -1,4 +1,4 @@
-function add_loss = epstein_peterson(rng_km,z,frequencia);
+function diffraction_loss = epstein_peterson(rng_km,z,frequencia);
 
 %Epstein-Peterson Model
 
@@ -50,7 +50,7 @@ end
 %additional loss calculation (diffraction loss) if there are more than 2
 %tops_position, 2 = transmitter + receiver point
 tops_position = tops_position * 1000; %distances to meters
-add_loss = 0; %dB
+diffraction_loss = 0; %dB
 if length(tops_position)>2
     
     for i=1:length(tops_position)-2;
@@ -67,7 +67,7 @@ if length(tops_position)>2
         % its an aproximation, is possible to replace using sine and cosine
         % fresnel integral calculation provided in an external code for a
         % more accurate result (in pratctice was not too relevant)
-        add_loss = add_loss + (-20*log10(0.5*exp(-0.95*Vo))) ;
+        diffraction_loss = diffraction_loss + (-20*log10(0.5*exp(-0.95*Vo))) ;
     end
 
 end
