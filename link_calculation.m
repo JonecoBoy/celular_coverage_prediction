@@ -2,6 +2,13 @@ tic
 clear all
 close all
 
+% Author: Jonas Nunes 
+% Universidade do Estado do Rio de Janeiro
+% 2017
+% www.joneco.com.br
+
+%this script will calculate and plot the fresnel elipsoid, elevation path, received power and total loss between two radio links.
+%based in 4 parameters, frequency, transmission power transmitter antenna gain and receiver antenna gain
 
 % if you wish to matlab ask you all the inputs instead of typing direct to
 % de code, uncomment the next 4 lines and comment the ones that is setting
@@ -89,7 +96,7 @@ xlabel('Distance(Km)');
 hold on
 plot(deg2km([rng(1) rng(end)]), [alt1 alt2]);%plotagem da visada direta onde liga 2 pontos no mapa entre tx e rx
 title('Elevation Profile');
-xlabel 'Dist‚nce (Km)';
+xlabel 'Dist√¢nce (Km)';
 ylabel 'Elevation/Altitude (M)';
 hold on
 
@@ -152,7 +159,7 @@ plot(rng_km,pr_dbm_total);title 'Received Power X Distance'
 xlabel('Distance (Km)');ylabel('Power (dBm)')
 figure;
 %total loss
-plot(rng_km,a0_db-diffraction_loss);title 'Total Loss X Dist‚ncia'
+plot(rng_km,a0_db-diffraction_loss);title 'Total Loss X Dist√¢ncia'
 xlabel('Distance (Km)');ylabel('Loss (dB)')
 
     
