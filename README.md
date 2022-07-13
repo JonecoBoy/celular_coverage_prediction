@@ -74,7 +74,7 @@ This image show the terrain with altitude/elevation used as example.
 ```
 
  
- <img src="images/relevo_rxtx.png" width="800" height="600" title="2D elevation Terrain Map">
+ <img src="images/relevo_rx_tx.png" width="800" height="600" title="2D elevation Terrain Map">
 
 ```
 This image shows a 3d View of the sunrounding area of the links.
