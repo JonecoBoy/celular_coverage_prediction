@@ -1,5 +1,16 @@
 tic 
 
+% Author: Jonas Nunes 
+% Universidade do Estado do Rio de Janeiro
+% 2017
+% www.joneco.com.br
+
+%This script will calculate and plot a celular coverage of a base station with free space loss only (ignoring the terrain elevation)
+%and with diffraction losses (considering the terrain elevation) based on the Epstein-Peterson method. 
+%It's possible to utilize other models like Okumura-Hata model and it can be extendable to use a loss matrix based in cluster area 
+%like urban, rural, dense urban etc...
+
+
 clear all
 close all
 
